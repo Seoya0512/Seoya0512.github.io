@@ -11,55 +11,10 @@
   }
 }
 
-#header {
-    text-align: center;
-    font-family: 'Roboto Slab', serif;
-    font-weight:light;
-}
-
-a {
-    text-decoration: none;
-    color:#333232d5;
-}
-/* menu */
-
-.menu li {
-    margin: 35px;
-}
-
-.menu li a {
-    color: #333232;
-    text-decoration: none;
-}
-
-.menu li a:hover {
-    text-decoration: underline;
-    text-decoration-color:gray;
-    text-decoration-thickness: 2px;
-  }
-
-.menu * {
-    display: inline;
-}
-
-.menu ul {
-    padding-left: 0px;
-}
-
-.menu {
-    font-size: 20px;
-    font-style: italic;
-    text-align: center;
-    align-items: center;
-    padding-top: 30px;
-}
-
-
 /* contact info */
 .contact_pic {
     width: 400px;
     height: 400px;
-    border-radius: 30%;
     padding-top: 50px;
 }
 
@@ -79,7 +34,6 @@ a {
 strong:after {
     /* Highlight color */
     background-color: beige;
-  
     content: "";
     position: absolute;
     width: calc(100% + 4px);
