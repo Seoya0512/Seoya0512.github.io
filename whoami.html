@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>🐣Youngseo Lee</title>
-    <link rel="stylesheet" href="./resources/css/whoami.css">
     <link rel="stylesheet" href="./resources/css/menu.css">
+    <link rel="stylesheet" href="./resources/css/whoami.css">
    </head>
 
    <body>
@@ -14,8 +14,8 @@
       @import url('https://fonts.googleapis.com/css2?family=Benne&display=swap');
       @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100&display=swap');
       @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500&display=swap');
-  </style>
-  
+    </style>
+
     <!-- Header section -->
     <header id = "header">
       <a href= "main.html"><h1> Youngseo Lee </h1></a>
@@ -28,27 +28,43 @@
         </nav>
     </header> 
 
-  <!-- Who am I main contents -->
+  <!-- Who am I picture slides -->
     <div class = "background">
-      <div class ="whoami_wrap">
-          <img src ="resources/images/whoami_1.jpeg" alt="Youngseo">
-          <p id = "explain"> 제주 아르떼 뮤지엄에서 (2021.12)</p>
+      <section aria-label="Photos">
+        <div class = "carousel" data-carousel>
+          <button class = "carousel-button prev" data-carousel-button ="prev">&#8656;</button>
+          <button class ="carousel-button next"data-carousel-button ="next">&#8658;</button>
+          <ul data-slides>
+            <li class ="slide" data-active>
+              <img src ="resources/images/whoami1.jpeg" alt= "whoami1">
+            </li>
+            <li class="slide">
+              <img src ="resources/images/whoami2.jpg" alt = "whoami2">
+            </li>
+            <li class="slide">
+              <img src ="resources/images/whoami3.jpg" alt = "whoami3">
+            </li>
+          </ul>
         </div>
-      </div>
 
-      <div class ="whoami_wrap">
+      <div class ="carousel">
         <div class="whoami_text">
-          <div class="whoami_text_name">이영서 🌱 </div>
-          <div class="whoami_text_description">안녕하세요, 저는 프론트엔드 개발자를 꿈꾸는 이영서입니다. <br><br>
-            이전 직장에서 사업 기획과 운영 업무를 담당 하던 중 <strong>성장</strong>에 대해 깊이 있게 고민하게 됐어요.
-            그리고 <span class ="half_HL">과연 이 직무로 개인의 성장을 이룰 수 있을까?</span> 스스로에게 질문을 던지게 됐죠..<br><br>
-            그 고민의 결말은 저를 <span class= "half_HL"><strong>개발자</strong></span>의 길로 이끌었던 것 같습니다. 두렵고 설레이는 마음으로 새 출발을 시작하려고 합니다.
-            <br><br>
-            <p>console.log('Let's start my journey as a web developer..')</p>
+          <div class="whoami_text_name"> console.log(`Let's start my journey as a ${Developer}..") </div>
+          <div class="whoami_text_description"> 
+             <span class= "half_HL">let Developer = "계속 성장해 나아갈 개발자"</span><br>
+            이전 직장에서 성장에 대해 깊이 있게 고민하게 됐어요.
+            그리고 그 고민은 끊임없이 성장할 수 있는 개발자의
+             매력에 이끌려 새로운 도전으로 이어졌습니다. 
+          </div>
+          <div class="whoami_text_description"> 
+            <span class= "half_HL"> Developer = 누군가에게 도움이 되는 개발자</span><br>
+            저는 누군가에게 도움이 되는 개발자가 되고 싶습니다. 그렇게 되기 위해서는 실력과 따뜻한 마음이 필요하다고 생각합니다. 
           </div>
         </div>
       </div>
     </div>
+  </section>
   </body>
+  <script src="./resources/js/whoami.js"></script>
 </html> 
 
