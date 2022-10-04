@@ -17,6 +17,7 @@
 
 .wrapper {
     position: relative;
+    height: auto;
     text-align: center;
     padding-top: 50px;
     float: left;
@@ -26,14 +27,12 @@
     position: relative;
     height: auto;
     padding-top: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
     text-align: center;
   }
 
 .image {
-    display: block;
     width: 70%;
+    display: block;
     height: auto;
     margin: auto;
     overflow: auto;
